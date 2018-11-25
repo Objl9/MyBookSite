@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Authors title</title>
+</head>
+<body>
+<h1>Все авторы фентези:</h1>
+
+<ul>
+    {%for author in authors%}
+    <li><a href="/authors/{{author.author}}">{{author.author}}</a></li>
+    {%endfor%}
+</ul>
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BOOK TITLE</title>
+</head>
+<body>
+<p>This is the book page</p>
+<div>
+    <h1>{{book_name}}</h1>
+    <h2>{{book_author}}</h2>
+    <p>{{book_description}}</p>
+</div>
+<form action="/books/">
+    <input type="submit" value="Все книги" />
+</form>
+<form action="/authors/{{book_author}}">
+    <input type="submit" value="К странице автора" />
+</form>
+</body>
+</html>

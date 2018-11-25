@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>All Books</title>
+</head>
+<body>
+    <ul>
+        {%for book in books%}
+        <li><a href ='/books/{{book.book_name}}/'>{{book}}</a></li>
+        {%endfor%}
+    </ul>
+<form action="/">
+    <input type="submit" value="Back" />
+</form>
+</body>
+</html>

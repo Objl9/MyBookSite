@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{author.author}}</title>
+</head>
+<body>
+<p>This is the author's page</p>
+<div>
+    <h1>{{author}}</h1>
+    <p>{% if author_description != None %}
+    {{author_description}}
+    {%endif%}
+    </p>
+    <h2>Все книги автора:</h2>
+    <ul>
+        {%for book in books%}
+        <li><a href="/books/{{book.book_name}}">{{book.book_name}}</a></li>
+        {%endfor%}
+    </ul>
+</div>
+<form action="/authors/">
+    <input type="submit" value="Back" />
+</form>
+</body>
+</html>
