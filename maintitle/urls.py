@@ -8,3 +8,4 @@ urlpatterns = [
     path("books/<str:book_name>/", views.book_title, name='book_title'),
     path("authors/<str:author>/", views.author_title, name='author_title')
 ]
+#zalypa
